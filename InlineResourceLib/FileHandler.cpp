@@ -16,7 +16,7 @@ FileHandler::~FileHandler()
 
 std::vector<uint8_t> FileHandler::GetContent(std::string filePath)
 {
-	fs::path path = fs::current_path() / filePath;
+	fs::path path = /*fs::current_path() / */filePath;
 
 	auto fileSize = 0; 
 	try {
